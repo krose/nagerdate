@@ -13,3 +13,5 @@ Import:
   httr2,
   jsonlite
 RoxygenNote: 7.2.3
+URL: https://github.com/krose/nagerdate
+BugReports: https://github.com/krose/nagerdate/issues
