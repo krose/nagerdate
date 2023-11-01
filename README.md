@@ -10,7 +10,7 @@ The goal of nagerdate is to create a convenient API wrapper to the
 [Nager.Date](https://github.com/nager/Nager.Date) API.
 
 The Nager.Date API has an interface for getting holidays for a long list
-of countries for these holiday variants:
+of countries for these holiday variants below:
 
 - Public holidays
 - Bank holidays
@@ -57,11 +57,11 @@ head(nd_country_info(country_code = "DE"))
 head(nd_holidays(country_code = "DE", year = 2023))
 #> # A tibble: 6 x 9
 #>   date       localName  name  countryCode fixed global counties launchYear types
-#>   <chr>      <chr>      <chr> <chr>       <lgl> <lgl>  <list>        <int> <lis>
-#> 1 2023-01-01 Neujahr    New ~ DE          TRUE  TRUE   <NULL>         1967 <chr>
-#> 2 2023-01-06 Heilige D~ Epip~ DE          TRUE  FALSE  <chr>          1967 <chr>
-#> 3 2023-03-08 Internati~ Inte~ DE          TRUE  FALSE  <chr>          2019 <chr>
-#> 4 2023-04-07 Karfreitag Good~ DE          FALSE TRUE   <NULL>           NA <chr>
-#> 5 2023-04-09 Ostersonn~ East~ DE          FALSE FALSE  <chr>            NA <chr>
-#> 6 2023-04-10 Ostermont~ East~ DE          FALSE TRUE   <NULL>         1642 <chr>
+#>   <chr>      <chr>      <chr> <chr>       <lgl> <lgl>  <chr>         <int> <chr>
+#> 1 2023-01-01 Neujahr    New ~ DE          TRUE  TRUE   ""             1967 Publ~
+#> 2 2023-01-06 Heilige D~ Epip~ DE          TRUE  FALSE  "DE-BW;~       1967 Publ~
+#> 3 2023-03-08 Internati~ Inte~ DE          TRUE  FALSE  "DE-BE;~       2019 Publ~
+#> 4 2023-04-07 Karfreitag Good~ DE          FALSE TRUE   ""               NA Publ~
+#> 5 2023-04-09 Ostersonn~ East~ DE          FALSE FALSE  "DE-BB;~         NA Publ~
+#> 6 2023-04-10 Ostermont~ East~ DE          FALSE TRUE   ""             1642 Publ~
 ```

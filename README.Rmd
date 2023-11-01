@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 The goal of nagerdate is to create a convenient API wrapper to the [Nager.Date](https://github.com/nager/Nager.Date) API. 
 
-The Nager.Date API has an interface for getting holidays for a long list of countries for these holiday variants:
+The Nager.Date API has an interface for getting holidays for a long list of countries for these holiday variants below:
 
 - Public holidays
 - Bank holidays
