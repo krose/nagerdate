@@ -26,5 +26,8 @@ nd_holidays <- function(country_code, year){
     jsonlite::fromJSON() |>
     tibble::as_tibble()
 
+  resp$counties <- unlist(sapply(resp$counties, function(x){paste(unlist(x), collapse = ";")}))
+  resp$types <- unlist(sapply(resp$types, function(x){paste(unlist(x), collapse = ";")}))
+
   resp
 }
