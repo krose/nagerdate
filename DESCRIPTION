@@ -1,0 +1,15 @@
+Package: nagerdate
+Type: Package
+Title: Wrapper for the Nager.Date API
+Version: 0.1.0
+Author: Kenneth Rose
+Maintainer: Kenneth Rose <kennethrose82@gmail.com>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Import:
+  httr2,
+  jsonlite
+RoxygenNote: 7.2.3

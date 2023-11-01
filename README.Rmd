@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# nagerdate
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of nagerdate is to create a convenient API wrapper to the [Nager.Date](https://github.com/nager/Nager.Date) API. 
+
+The Nager.Date API has an interface for getting holidays for a long list of countries for these holiday variants:
+
+- Public holidays
+- Bank holidays
+- School holidays
+- Authority holidays
+- Optional holidays where most people take a day off
+- Observance holidays for optional festivities.
+
+
+## Installation
+
+You can install the development version of nagerdate like so:
+
+``` r
+remotes::install_github("krose/nagerdate")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(nagerdate)
+
+# Get the suported countries
+head(nd_available_countries())
+
+# Get the country info for Germany
+head(nd_country_info(country_code = "DE"))
+
+# Get the holidays for Germany in 2023
+head(nd_holidays(country_code = "DE", year = 2023))
+
+```
+
